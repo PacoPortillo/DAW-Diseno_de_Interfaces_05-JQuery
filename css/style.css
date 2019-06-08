@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* */
+/* ESTILOS PARA NORMALIZAR LOS ESTILOS EN DIFERENTES NAVEGADORES */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:active,
+a:active * {
+    outline: 0 none !important;
+    text-decoration: none;
+}
+
+a:focus,
+a:focus * {
+    outline: 0 none !important;
+    text-decoration: none;
+}
+
+input[type="button"], input[type="reset"], input[type="submit"] {
+    outline: 0 none !important;
+    text-decoration: none;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    border-style: none;
+}
+
+/* */
+/* FIN DE ESTILOS PARA NORMALIZAR LOS ESTILOS EN DIFERENTES NAVEGADORES */
+
+/* */
+/* ESTILOS DIRECTOS Y DE USO COMÚN */
+.pasar-left {
+    float: left;
+}
+
+.pasar-right {
+    float: right;
+}
+
+.pasar-clear {
+    clear: both;
+}
+
+.pasar-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+mark {
+    background-color: rgba(237, 174, 73, 0.1);
+}
+
+.required {
+    color: rgba(48, 99, 142, 0.4);
+}
+
+.required::before {
+    content: "\f069";
+    font-family: FontAwesome;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* FIN DE ESTILOS DIRECTOS Y DE USO COMÚN */
+
+/* */
+/* ESTILOS GENÉRICOS DE LA PÁGINA */
+body {
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contenido {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* FIN DE ESTILOS GENÉRICOS DE LA PÁGINA */
+
+/* Página principal */
+/* Logo */
+#logo {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#logo img {
+    width: 110px;
+}
+
+#logo h1 {
+    padding-top: 30px;
+    color: #303030;
+}
+
+
+/* menu */
+
+#menu {
+    background-color: #fff;
+  }
+  
+  #menu nav {
+    margin-top: 0px;
+    text-align: right;
+    background-color: #fff;
+  }
+
+#menu nav ul {
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  #menu nav li {
+    /* items del menú */
+    display: inline;
+  }
+  
+  #menu nav a {
+    padding: 15px 20px 15px 20px;
+    color: #a06d1a;
+    font-weight: bold;
+    line-height: 50px;
+  }
+  
+  #menu nav a:hover {
+    color: #694812;
+  }
+  
+  #menu nav a:focus {
+    background-color: rgba(48, 99, 142, 0.2);
+    font-weight: bold;
+  }
+
+  /* Main */
+
+  main {
+      width: 850px;
+  }
+
+  main h1, main h2, main h3, main h4, main h5, main h6 {
+      text-align: center;
+      color: #303030;
+  }
+
+  .familias {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    transition: all 300ms ease-in-out;
+  }
+
+  .familias:hover {
+      cursor: pointer;
+      transform : scale(2.8);
+  }
+
+  #fotos_norte .active {
+    border: #a06d1a 4px solid;
+}
+
+  #francia {
+      background-color: rgb(66, 212, 127);
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: 83px 50px;
+  }
+
+  #marruecos {
+    background-color: rgb(66, 212, 127);
+    background-repeat: no-repeat;
+      background-position: center; 
+      background-size: 83px 50px;
+  }
+
+  #text_norte {
+    position: relative;
+    z-index: 10;
+    font-weight: bold;
+    color: #a06d1a;
+}
+
+ #tex_francia {
+    width: 50px;
+    text-align: center; 
+}
+
+#tex_marruecos {
+    width: 64px;
+    text-align: center; 
+}
+
+/* Zona Centro */
+
+.content_canvas {
+    /* margin: 20vh 2.4vw 0vh 2.4vw; */
+    margin: 245px 47px 0 40px; 
+    width: 80px;
+    height: 100px;
+    /* background: red; */
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.content_canvas:hover {
+    transform : scale(1.4);
+}
+
+
+/* Foto y deslizador */
+#escena {
+    position: relative;
+    margin: 10px auto 15px auto;
+    width: 500px;
+    height: 350px;
+}
+#escena_foto {
+    width: 500px;
+    height: 300px;
+    /*background: blue;*/
+}
+
+#escena_deslizador {
+    width: 200px;
+    margin: 15px 163px;
+}
+/* Fin de Zona Centro */
+
+
+/* Zona Sur Imágenes en miniaturas: */
+#sur {
+    width: 400px;
+    margin: 0 auto 100px auto;
+}
+#sur div {
+    width: 40px;
+      height: 40px;
+      background-color: rgb(66, 212, 127);
+      float: left;
+      border-radius: 5px;
+      margin-right: 30px;
+      transition: all 200ms ease-in-out;
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: 67px 40px;
+}
+
+#sur > div:last-child {
+    margin-right: 0;
+}
+
+#sur div:hover {
+    cursor: pointer;
+    transform : scale(2.2);
+}
+
+#sur div.active {
+    border: #a06d1a 3px solid;
+}
+/* Fin de Zona Sur Imágenes en miniaturas. */
+
+/* Zona Aside */
+/* Paneles informativos y filtros: */
+aside {
+    width: 290px;
+}
+
+.zona_aside {
+    margin-top: 90px;
+    margin-bottom: 75px;
+  }
+  
+  .zona_aside div {
+    margin: 50px 0;
+    padding: 5px 10px 15px 10px;
+    border: #303030 solid 2px;
+  }
+
+  #btn_datos, #btn_filtros {
+      margin: 0 3.5vw;
+      padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  #cb_filtros {
+    margin: 0 3.5vw;
+    padding: 10px 15px;
+    cursor: pointer; 
+  }
+
+  /* Footer */
+  footer#pie {
+    padding: 10px 0 30px 0;
+    background-color:  #303030;
+    color: #a06d1a;
+    text-align: center;
+  }
+ 
+
+
+
+
+
+/* https://www.w3schools.com/cssref/css_selectors.asp */
+/* https://jigsaw.w3.org/css-validator/ */

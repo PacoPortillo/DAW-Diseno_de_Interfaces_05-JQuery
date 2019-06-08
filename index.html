@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DIW Tarea 06 | Jose Francisco Sánchez Portillo</title>
+    <link type="image/x-icon" href="favicon-144x144.png" rel="shortcut icon">
+	<link href="favicon-144x144.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <div class="#contenido">
+
+    <header class="container"> <!-- Cabecera con el logo y el título -->
+        <div id="logo" >
+            <img src="imagenes/logo.png" class="pasar-left">
+            <h1>DIW - Tarea 06 - Paco Portillo</h1>
+        </div>
+        <div class="pasar-clear"></div>
+    </header>
+    
+    <hr>
+    <!-- MENÚ PRINCIPAL -->
+    <div id="menu" class="pasar-clear">
+        <nav class="container" role="navigation">
+            <ul>
+                <li><a href="index.html">Resetar valores</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr>
+    <!-- FIN de MENÚ PRINCIPAL -->
+
+
+    <!-- Cuerpo principal -->
+    <div id="cuerpo" class="container">
+
+        <main class="pasar-left">
+            <h1>Visor de Fotos:</h1>
+    
+            <article>
+                <header>
+                    <hgroup>
+                        <h2>Gestiona tus imágenes</h2>
+                    </hgroup>
+                </header>
+                
+                <!-- Parte Norte -->
+                <div id="fotos_norte">
+                    <div id="francia" class="pasar-left familias active"></div>
+                    <div id="marruecos" class="pasar-right familias"></div>
+                </div>
+                <div  class="pasar-clear"></div>
+                <div id="text_norte">
+                    <div id="tex_francia" class="pasar-left">
+                        Francia
+                    </div>
+                    <div id="tex_marruecos" class="pasar-right">
+                        Marruecos
+                    </div>
+                </div>
+                <div  class="pasar-clear"></div>
+                <!-- Parte Medio -->
+                <div>
+                    <div class="content_canvas pasar-left">
+                        <canvas id="canvas_izq" width="80" height="100">
+                            <p>Tu navegador no es compatible con canvas, cambia a Firefox, Safari, Chrome, Opera ó IE10.</p>
+                        </canvas>
+                    </div>
+                    <div id="escena" class="pasar-left">
+                        <div id="escena_foto"></div>
+                        <input id="escena_deslizador" type="range" min="0" max="100" step="1"  value="50">
+                    </div>
+                    <div class="content_canvas pasar-right">
+                        <canvas id="canvas_der" width="80" height="100">
+                            <p>Tu navegador no es compatible con canvas, cambia a Firefox, Safari, Chrome, Opera ó IE10.</p>
+                        </canvas>
+                    </div>
+                </div>
+                <div  class="pasar-clear"></div>
+                <!-- Parte Sur -->
+                <div id="sur">
+                    <div class="active"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div  class="pasar-clear"></div>
+                
+                <p><mark>Dedicado a dos de nuestros vecinos más próximos: Francia y Marruecos.</mark></p>
+
+            </article>
+    
+            </main>
+
+    
+
+        <!-- Aside lateral -->
+
+        <aside class="pasar-right zona_aside">
+            <header><h3>Paneles laterales:</h3></header>
+            <div class="datos">
+                <p><strong>Miniatura seleccionada:</strong></p>
+                <p>Número: </p>
+                <p>Nombre: </p>
+                <p>Ancho: 500 px, Alto: 300 px.</p>
+                <button id="btn_datos">Ocultar Detalles</button>
+            </div>
+
+            <div class="filtros">
+                <p><strong>Seleccione filtro a aplicar:</strong></p>
+                <select id="cb_filtros">
+                    <option value="0">Sin filtros</option>
+                    <option value="brightness">Brightness</option>
+                    <option value="contrast">Contrast</option>
+                    <option value="grayscale">Grayscale</option>
+                    <option value="invert">Invert</option>
+                    <option value="saturate">Saturate</option>
+                    <option value="sepia">Sepia</option>
+                    <!--filtros extras-->
+                    <option value="blur">Blur</option>
+                    <option value="hue-rotate">Hue-Rotate</option>
+                  </select>
+                <p>Nivel de </p>
+                <button id="btn_filtros">Mostrar Detalles</button>
+            </div>
+        </aside>
+
+        <!-- Fin del Aside lateral -->
+        
+    </div>
+    <!-- Fin del cuerpo principal -->
+    <div class="pasar-clear"></div>
+    
+    <footer id="pie">
+        <div id="copyright"><p>Tarea 06 de DIW de DAW para el IES Aguadulce (Almería) | Paco Portillo</p></div>
+                    <div  id="copyright_text">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Trabajo de DIW del Ciclo DAW Tarea 05</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="https:pacoportillo.es" property="cc:attributionName" rel="cc:attributionURL" target="_blank" style="color: beige;">Paco Portillo</a> publicado bajo la siguiente licencia <br/> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" style="color: beige;">Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional License</a>.
+                    </div>
+    </footer>
+
+</div> <!--  Fin de contenido-->
+
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>
+
